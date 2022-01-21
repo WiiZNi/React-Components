@@ -1,0 +1,120 @@
+/*//////////////////////////////////*/
+
+/************** Input **************/
+
+/*/////////////////////////////////*/
+
+.input {
+    text-align: left;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #1f262d;
+    border-radius: 0;
+    padding: 8px 16px;
+    background-color: #f9fafb;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
+    color: #4f6173;
+    font-size: 12px;
+
+    &--default {
+        min-width: 88px;
+        background-color: #f9fafb;
+        border-bottom: 1px solid #1f262d;
+    }
+
+    &:hover {
+        background-color: #f9fafb;
+        border-bottom: 2px solid #1f262d;
+    }
+
+    &:focus {
+        min-width: 40px;
+        font-weight: bold;
+        background-color: #f9fafb;
+        border-bottom: 2px solid #1f262d;
+    }
+
+    &--disabled {
+        background-color: #f9fafb;
+        border-bottom: 1px solid #bdc7d1;
+    }
+
+    &--filled {
+        
+        min-width: 50px;
+        font-weight: bold;
+        background-color: #e9f4fb;
+        border-bottom: 1px solid #1f262d;
+    }
+
+    &--error {
+        width: 60px;
+        background-color: #fce8e8;
+        color: #b61616;
+        border-bottom: 2px solid #b61616;
+        pointer-events:none;
+        display: inline;
+    }
+
+    &--error::placeholder{
+        color: #b61616;
+    }   
+
+    &--success {
+        width: 60px;
+        background-color: #ecf9f1;
+        color: #33995e;
+        border-bottom: 2px solid #33995e;
+        pointer-events:none;
+        display: inline;
+    }
+
+    &--success::placeholder{
+        color: #33995e;
+    }
+}
+
+.input--textarea, .input--textarea:focus {
+    display: block;
+    text-align: left;
+    min-height: 110px;
+    min-width: 231px;
+}
+
+
+
+
+/*//////////////////////////////////*/
+
+/************** Icone **************/
+
+/*/////////////////////////////////*/
+
+.input__icon {
+    position: relative;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+}
+
+.input__icon--error{
+    color: #b61616;
+}
+
+.input__icon--success{
+    color: #33995e;
+}
+
+/*//////////////////////////////////*/
+
+/************** Label **************/
+
+/*/////////////////////////////////*/
+
+.input__label{
+    margin-left: 14px;
+}

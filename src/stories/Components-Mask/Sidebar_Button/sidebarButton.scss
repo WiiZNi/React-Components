@@ -1,0 +1,40 @@
+.sidebarButton{
+    border-radius: 25px;
+    padding: 8px 0;
+    background: #EAEDF1;
+    color: #4F6173; 
+    border: none;
+
+    &--closed{
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        
+    }
+}
+
+.sidebarButton__imgLeftArrow{
+    position: relative;
+    top: 4px;
+    left: 8px;
+    width: 16px;
+    height: 16px;
+    margin-right: 24px;
+}
+
+.sidebarButton__imgLeftArrow--closed{
+    position: relative;
+    top: 0px;
+    left: 8px;
+    transform: rotate(180deg);
+}
+
+.sidebarButton__label{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-left: 24px;
+}

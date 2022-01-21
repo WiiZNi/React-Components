@@ -1,0 +1,75 @@
+.rbcontainer {
+    text-align: left;
+}
+
+.rbcontainer__radiobtn{
+    display: none;
+
+    & + .rbcontainer__label {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        box-sizing: border-box;
+        position: relative;
+        display: inline-block;
+        border: 1px solid #BDC7D1;
+        cursor: pointer;
+    }
+    &:checked + .rbcontainer__label:after {
+        content: '';
+        height: 12px;
+        width: 12px;
+        position: absolute;
+        top: 3px;
+        left: 2.5px;
+        background-color: #F5B942;
+        border-radius: 50%;
+    }
+
+    &--default + .rbcontainer__label{
+        border: 1px solid #BDC7D1;
+    }
+    /*
+    &--default + .rbcontainer__label:hover{
+        border: 1px solid #F5B942
+    }
+
+    &--default + .rbcontainer__label:active{
+        border: 2px solid #BDC7D1;
+    }
+    */
+    &--pressed + .rbcontainer__label{
+        border: 1px solid #F5B942;
+    }
+    
+    &--pressed:checked + .rbcontainer__label::after{
+        color:  #F5B942;
+    }
+
+    &--selected + .rbcontainer__label{
+        border: 1px solid #F5B942;
+    }
+    &--selected:checked + .rbcontainer__label::after{
+        color: #F5B942;
+    }
+    &--disabled + .rbcontainer__label{
+        background: #BDC7D1;
+        pointer-events: none;
+    }
+    &--disabled:checked + .rbcontainer__label::after{
+        background-color: #8c8e8f;
+    }
+    &--success  + .rbcontainer__label{
+        border: 1px solid #40BF75;
+    }
+    &--success:checked + .rbcontainer__label:after{
+        background-color: #6FCF97;
+    }
+    &--error + .rbcontainer__label{
+        border: 1px solid #E41B1B;
+    }
+    &--error:checked + .rbcontainer__label:after{
+        background-color:  #E41B1B;
+    }
+}

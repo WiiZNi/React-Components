@@ -1,0 +1,41 @@
+.chips {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 4px;
+  color: #312102;
+  padding: 4px 0px;
+  display: inline-block;
+  min-height: 24px;
+  height: 24px;
+  background-color : #F5B942;
+
+  &--disabled {
+    background-color : #DEE2ED;
+    color : #1F262D;
+    cursor: not-allowed;
+  }
+}
+  
+.chips__icon{
+  position: relative;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  color: currentColor;
+
+  &--right{
+    margin-left: 8px;
+  }
+
+  &--left{
+    margin-right: 8px;
+  }
+
+}
+
+.chips__content{
+  margin-top: 1px;
+  padding: 0 8px;
+}

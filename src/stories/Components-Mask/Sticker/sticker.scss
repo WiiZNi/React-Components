@@ -1,0 +1,83 @@
+.sticker {
+  text-align: center;
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  color: #312102;
+  padding: 4px 16px;
+  display: inline-block;
+  min-width: 88px;
+  min-height: 24px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+
+  &--active{
+    background: #F5B942;
+    box-shadow: 0px 2px 0px #C2840A;
+    color: #312102;
+    cursor: pointer;
+  }
+
+  &--inactive {
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px #AEBAC6;
+    border: 1px solid #BDC7D1;
+    cursor: initial;
+  }
+
+  &--print {
+    background: #EAEDF1;
+    border: 1px solid #EAEDF1;
+    font-size: 0%;
+  }
+
+  &--target{
+    border: 1px dashed #BDC7D1;
+    font-size: 0%;
+    cursor: text;
+    border-radius: 5px;
+    background-color: #F9FAFB;
+  }
+
+  &--error {
+    color: #B61616;
+    background: #FCE8E8;
+    box-shadow: 0px 2px 0px #F9D2D2;
+  }
+
+  &--success {
+    background: #ECF9F1;
+    box-shadow: 0px 2px 0px #D8F3E2;
+    color: #33995E;
+  }
+
+  &--disabled {
+    border-color: transparent;
+    box-shadow: none;
+    background: #EAEDF1;
+    color: #9EADBD;
+    cursor: not-allowed;
+  }
+}
+
+.sticker__icon{
+  position: relative;
+  top: 3px;
+  right: 2px;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 500px){
+  .sticker__icon{
+    display: none;
+  }
+}
+
+
+
+

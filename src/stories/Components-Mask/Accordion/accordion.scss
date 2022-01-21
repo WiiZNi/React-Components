@@ -1,0 +1,50 @@
+.accordion__btn-expanded {
+    height: auto;
+    width: 300px;
+    padding: 16px;
+    background-color: #f6f7fa;
+    border: none;
+}
+
+.accordion__content {
+    display: flex;
+}
+
+.accordion__ctn-expanded {
+    display: flex;
+    justify-content: space-between;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+}
+
+.accordion__lock {
+    height: 16px;
+    width: 16px;
+    margin: 0px 10px;
+}
+
+.accordion__notif {
+    height: 8px;
+    width: 8px;
+    margin: 0;
+    border-radius: 50%;
+    background-color: #eb5757;
+}
+
+.accordion__arrow {
+    height: 16px;
+    width: 16px;
+}
+
+.accordion__panel {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+}

@@ -1,0 +1,7 @@
+export { default as Dictaphone } from './Dictaphone'
+export { default as Next } from './Next'
+export { default as Pause } from './Pause'
+export { default as Play } from './Play'
+export { default as Previous } from './Previous'
+export { default as Replay } from './Replay'
+export { default as Sound } from './Sound'

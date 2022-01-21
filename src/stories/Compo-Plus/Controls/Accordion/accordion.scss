@@ -1,0 +1,16 @@
+.accordion {
+    max-width: 350px;
+    text-align: left;
+    border: none;
+    outline: none;
+}
+
+.panel {
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 3px 0px 0px hsl(206, 71%, 24%);
+    background-color: white;
+    display: block;
+    overflow: hidden;
+}

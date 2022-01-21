@@ -1,0 +1,66 @@
+.cbcontainer {
+    text-align: left;
+}
+
+.cbcontainer__checkbox{
+    display: none;
+
+    & + .cbcontainer__label {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #647B91;
+        border-radius: 4px;
+        background: #FFFFFF;
+        box-sizing: border-box;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    &:checked + .cbcontainer__label:after {
+        content: '\2714';
+        font-size: 15px;
+        position: absolute;
+        top: -1px;
+        left: 4px;
+        color: #F5B942;
+    }
+
+    &--default + .cbcontainer__label{
+        border: 1px solid #BDC7D1;
+    }
+
+    &--pressed + .cbcontainer__label{
+        border: 1px solid #F5B942;
+    }
+    
+    &--pressed:checked + .cbcontainer__label::after{
+        color:  #F5B942;
+    }
+
+    &--selected + .cbcontainer__label{
+        border: 1px solid #F5B942;
+    }
+    &--selected:checked + .cbcontainer__label::after{
+        color: #F5B942;
+    }
+    &--disabled + .cbcontainer__label{
+        background: #BDC7D1;
+        border: none;
+        pointer-events: none;
+    }
+    &--disabled:checked + .cbcontainer__label::after{
+        color: #8c8e8f;
+    }
+    &--success  + .cbcontainer__label{
+        border: 1px solid #40BF75;
+    }
+    &--success:checked + .cbcontainer__label:after{
+        color: #6FCF97;
+    }
+    &--error + .cbcontainer__label{
+        border: 1px solid #E41B1B;
+    }
+    &--error:checked + .cbcontainer__label:after{
+        color:  #E41B1B;
+    }
+}
